@@ -1,0 +1,47 @@
+/* Custom Font */
+@font-face {
+    font-family: "Fixedsys Excelsior 3.01 Regular";
+    src: url(/font/Fixedsys\ Excelsior\ 3.01\ Regular.ttf) format("opentype");
+}
+
+/* Variables */
+:root {
+    --dark-grey: #101010;
+    --grey: #c0c0c0;
+    --nav-link-size: 1.5rem;
+}
+
+/* Global */
+body {
+    font-family: "Fixedsys Excelsior 3.01 Regular";
+    background-color: var(--dark-grey);
+    color: var(--grey);
+}
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+/* Header */
+header {
+    margin-bottom: 1rem;
+}
+header h1 {
+    text-align: center;
+}
+
+/* Laptop Screen Configuration */
+@media only screen and (min-width: 1000px) { 
+    /* Global */
+    body {
+        width: 130ch;
+        margin: auto;
+        padding: 0 0.5rem;
+        border-left: solid var(--grey) 0.1rem;
+        border-right: solid var(--grey) 0.1rem;
+    }
+    /* Header */
+    header h1 {
+        text-align: left;
+    }
+}

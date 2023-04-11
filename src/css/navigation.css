@@ -1,0 +1,65 @@
+/* Pop-Up Menu */
+nav p {
+    width: fit-content;
+    margin: auto;
+    padding: 0.7rem 3.95rem;
+    border: solid var(--grey) 0.1rem;
+    border-radius: 5rem;
+}
+.clicked {
+    padding: 0.7rem 4rem;
+    border-width: 0.001rem;
+    border-radius: 0;
+}
+
+/* Navigation */
+nav {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.border {
+    border: solid var(--grey) 0.001rem;
+}
+nav a {
+    display: none;
+    width: 10rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: solid var(--grey) 0.001rem;
+}
+nav a:hover {
+    color: var(--dark-grey);
+    background-color: var(--grey);
+}
+.visible {
+    display: block;
+    padding: 0.7rem 0;
+    background-color: var(--dark-grey);
+    color: var(--grey);
+}
+.visible:hover {
+    background-color: var(--grey);
+    color: var(--dark-grey);
+}
+
+/* Laptop Screen Configuration */
+@media only screen and (min-width: 1000px) { 
+    /* Header */
+    /* Pop-Up Mwnu */
+    nav p {
+        display: none;
+    }
+    /* Navigation */
+    nav {
+        width: 100%;
+        column-gap: 1rem;
+        flex-direction: row ;
+    }
+    nav a {
+        display: block;
+        border: none;
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,39 @@
+---
+import "../css/global.css";
+import "../css/navigation.css";
+const {frontmatter} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+        <meta name="author" content={frontmatter.author}>
+        <meta name="description" content={frontmatter.description}>
+        <meta name="generator" content={Astro.generator} />
+        <meta name="viewport" content="width=device-width" />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+        <header>
+            <h1>Digital Language</h1>
+            <hr>
+            <nav>
+                <p>
+                    Menu
+                </p>
+                <a href="/">Introduction</a>
+                <a href="/web-development/introduction">Web Development</a>
+            </nav>
+            <hr>
+        </header>
+	
+		<slot/>
+
+        <footer>
+            <a href="/sitemap">SiteMap</a>
+        </footer>
+	</body>
+
+    <script src="../javascript/navigation.js"></script>
+</html>
