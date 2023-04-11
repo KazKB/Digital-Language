@@ -29,6 +29,21 @@ header {
 header h1 {
     text-align: center;
 }
+header h1 a:hover {
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+footer a {
+    font-size: 2rem;
+}
+footer a:hover {
+    color: white;
+}
 
 /* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) { 

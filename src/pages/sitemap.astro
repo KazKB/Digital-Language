@@ -1,8 +1,47 @@
 ---
-import Template from "../layouts/Template.astro";
-import "../css/sitemap.css"
+import "../css/global.css";
 ---
 
-<Template author="Kaleel Boston" description="Links and structure of Digital Language." title="SiteMap - Digital Language">
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+        <meta name="author" content="Kaleel Boston">
+        <meta name="description" content="Links and structure of Digital Language">
+        <meta name="generator" content={Astro.generator} />
+        <meta name="viewport" content="width=device-width" />
+		<title>Sitemap - Digital Language</title>
 
-</Template>
+        <style>
+            a:hover {
+                color: white;
+            }
+        </style>
+	</head>
+	<body>
+        <header>
+            <h1>Digital Language</h1>
+            <hr>
+        </header>
+        
+        <h2>HomePage</h2>
+        <p>
+            <a href="/">Home</a>
+            &lt;&lt;
+            <a href="/web-development/introduction">Web Development</a>
+        </p>
+
+        <h2>Web Development</h2>
+        <p>
+            <a href="/web-development/introduction">Introduction</a>
+            &lt;&lt;
+            <a href="/web-development/htmlL">Hypertest Mark Up Language</a>
+        </p>    
+        
+        <hr>
+
+        <footer>
+            <a href="/sitemap">-=SiteMap=-</a>
+        </footer>
+	</body>
+</html>
