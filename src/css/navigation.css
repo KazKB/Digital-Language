@@ -44,8 +44,8 @@ nav a:hover {
     color: var(--dark-grey);
 }
 
-/* Laptop Screen Configuration */
-@media only screen and (min-width: 1000px) { 
+/* Laptop and Tablet Screen Configuration */
+@media only screen and (min-width: 700px) { 
     /* Header */
     /* Pop-Up Mwnu */
     nav p {
