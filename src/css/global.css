@@ -24,9 +24,19 @@ a {
     text-decoration: none;
     color: var(--grey);
 }
+a:hover {
+    color: purple;
+}
 li, ul, ol {
     margin-left: 0.5rem;
     padding: 0;
+    list-style-type: square;
+}
+li {
+    margin-top: 0.5rem;
+}
+ul, ol {
+    margin-top: -0.5rem;
 }
 h2, h3, h4 {
     margin-bottom: -0.5rem;

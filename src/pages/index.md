@@ -8,6 +8,14 @@ author: "Kaleel Boston"
 
 Are you interested in learning how to make programs and websites? Well here at <abbr title="Digital Language">DigiLang</abbr> a basic understanding of how to do so is provided. The information provided will be just enough to get your foot into the door. How so? A wide array of topics such as programming languages and javascript frameworks will be covered. You don't worry if you don't understand those terms as you will soon have an idea.  
 
+Click To Jump To:
+
+* [Programming Languages](#programming-languages)
+* [Types of Languages](#types-0f-languages)
+* [Front-End Vs Back-End](#front-end-vs-back-end)
+* [Compiler Vs Intepreter](#compiler-vs-interpreter)
+* [Integrated Development Environment](#integrated-development-environment-ide)
+
 <hr>
 
 ### Programming Languages  
@@ -17,6 +25,8 @@ Programming Languages are the building blocks used to make websites and programs
 #### Levels of Programming Languages  
 
 Programming Languages are used in the creation of applications, databases, games, programs, operating systems and websites, just to name a few. These languages fall under different levels that can be further broken down into generations (i.e versions). And they can also be distinguised by different categories such as front-end or back-end, interpreted or compiled, and types of language.  
+
+There are two levels of languages:
 
 * Low Level (1<sup>st</sup> Generation - 2<sup>nd</sup> Generation)
 * High Level (3<sup>rd</sup> Generation - 5<sup>th</sup> Generation)  
@@ -107,6 +117,6 @@ An integrated development environment aka IDE is a software that combines numero
 
 Examples of IDEs are:  
 * Visual Studio Code - Lightweight and serves a multitude of uses as one can install extensions to suit their needs.
-* Visual Studia - Heavyweight and used for coding in Visual Basic and C#.
-* Intellij - Heavyweight and used for coding in Java.
+* Visual Studio - Heavyweight and used for coding in Visual Basic and C#.
+* IntelliJ - Heavyweight and used for coding in Java.
 * Pycharm - Heavyweight and used for coding in Python.
