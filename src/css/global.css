@@ -16,10 +16,32 @@ body {
     font-family: "Fixedsys Excelsior 3.01 Regular";
     background-color: var(--dark-grey);
     color: var(--grey);
+    padding: 0 0.5rem;
+    border-left: solid var(--grey) 0.1rem;
+    border-right: solid var(--grey) 0.1rem;
 }
 a {
     text-decoration: none;
     color: var(--grey);
+}
+li, ul, ol {
+    margin-left: 0.5rem;
+    padding: 0;
+}
+h2, h3, h4 {
+    margin-bottom: -0.5rem;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.2rem;
 }
 
 /* Header */
@@ -44,6 +66,9 @@ footer a {
 footer a:hover {
     color: white;
 }
+#credit {
+    font-size: 1rem;
+}
 
 /* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) { 
@@ -51,9 +76,6 @@ footer a:hover {
     body {
         width: 130ch;
         margin: auto;
-        padding: 0 0.5rem;
-        border-left: solid var(--grey) 0.1rem;
-        border-right: solid var(--grey) 0.1rem;
     }
     /* Header */
     header h1 {

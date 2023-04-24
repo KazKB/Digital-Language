@@ -10,6 +10,8 @@ nav p {
     padding: 0.7rem 4rem;
     border-width: 0.001rem;
     border-radius: 0;
+    background-color: var(--grey);
+    color: var(--dark-grey);
 }
 
 /* Navigation */
