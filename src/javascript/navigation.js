@@ -15,7 +15,7 @@ if(screen.width < 700) {
 
 // Return To Top Button
 let returnToTop = document.createElement("p");
-returnToTop.innerHTML = "&#8679;";
+returnToTop.innerHTML = "&#8682;";
 returnToTop.className = "hidden";
 document.body.appendChild(returnToTop);
 returnToTop.addEventListener("click", function() {
