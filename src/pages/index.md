@@ -22,6 +22,8 @@ Click To Jump To:
 
 Programming Languages are the building blocks used to make websites and programs. They are what humans use to communicate and instruct a device on what to do and how to do it. And just like human languages they each have their own structure and grammar (syntax). Some may be similar to others and some may be their own format.  
 
+<br>
+
 #### Levels of Programming Languages  
 
 Programming Languages are used in the creation of applications, databases, games, programs, operating systems and websites, just to name a few. These languages fall under different levels that can be further broken down into generations (i.e versions). And they can also be distinguised by different categories such as front-end or back-end, interpreted or compiled, and types of language.  
@@ -31,21 +33,33 @@ There are two levels of languages:
 * Low Level (1<sup>st</sup> Generation - 2<sup>nd</sup> Generation)
 * High Level (3<sup>rd</sup> Generation - 5<sup>th</sup> Generation)  
 
+<br>
+
 #### 1<sup>st</sup> Generation Language (1GL)  
 
 One of the two generations of low level languages is the 1<sup>st</sup> generation. It consists of just one language called *machine language*. This is the language a device understands without the need of a translator and speaks. Machine Language is a series of 0s and 1s aka binary that have different meanings. In essence the different combinations can be considered words that the devices communicate by. Also machine language is machine dependent. Meaning that the same combination of 0s and 1s can be two different instructions for two devices. By having this property programmers are required to remember the meaning of each combination for each device. Not only that but as machine language is just binary it is hard to read and debug (correct errors). However, despite being tedious, machine language instructions are performed quickly as the device is instantly able to understand it and doesn't need the instructions to be translated.  
+
+<br>
 
 #### 2<sup>nd</sup> Generation Language (2GL)  
 
 The other generation of low level languages is 2<sup>nd</sup> generation. Like 1<sup>st</sup> generation, it consists of one language called *assembly language*. Assembly language is a little different from machine language. It uses mneomics and short keywords for its instructions instead of binary. Thanks to this it is easier for a human to read and debug than machine language. But unfortunately assembly language is still machine dependent and still difficult for a human to navigate. And as it is not binary it needs a translator (assembler) to convert it to machine language.  
 
+<br>
+
+
 #### 3<sup>rd</sup> Generation Languages (3GL)  
 
 The first of the high level languages is 3<sup>rd</sup> generation. A multitude of programming languages fall under this generation. For example: *Basic*, *C++*, *Java* and *Pascal*. 3<sup>rd</sup> generation languages are closer to human language than the low level languages. Words are used to denote instructions making it easier for the programmer to understand and use. And on top of that they are machine independent. Meaning that no matter the device you are programming for the instructions are the same. However, since they are close to human language instructions are slower to be carried out compared to machine and assembly language. This is because they need compilers and interpreteters (translators) to convert the human friendly code (source code) to machine friendly code (machine code).  
 
+<br>
+
+
 #### 4<sup>th</sup> Generation Languages (4GL)  
 
 The second of the high level languages is 4<sup>th</sup> generation. Like 3<sup>rd</sup> generation it also has a multitude of languages. For example: *Perl*, *PHP* and *SQL*. 4<sup>th</sup> generation languages are even closer to human language than the previous generations. They also differ a bit to 3<sup>rd</sup> generation. 3<sup>rd</sup> generation languages have aspects of procedural languages while 4<sup>th</sup> generation languages have aspects of scripting languages. More information on the types of languages will be provided below.  
+
+<br>
 
 #### 5<sup>th</sup> Generation Languages (5GL)  
 
@@ -64,22 +78,32 @@ There are 5 types of programming languages:
 * Scripting
 * Logic  
 
+<br>
+
 #### Procedural Programming Languages  
 
 Procedural languages consist of a sequence of instructions and statements that are carried out in sequential order to get a task done. A set of instructions that relate to a task is called a procedure. Programs written in these languages tend to have one or more of these procedures. Examples of this type of language are *C*, *C++*, *Java* and *Pascal*.  
 
+<br>
+
 #### Functional Programming Languages  
 
 Functional languages consist of a group of reusable instructions and statements that carry out a task called a function. Functions can be thought of as reusable procedures that can be carried out in any order. And just like programs written in procedural languages, programs made by functional languages can consist of one or more functions. Examples of this type of language are *C++*, *Elixir*, *Java*, *Python* and *Scala*.  
+
+<br>
 
 #### Object-Oriented Programming Languages  
 
 Object-Oriented Programming Languages consist of objects which are a collection of data and functions called methods that are related to a topic. To better understand you can see an object as a car and the components as the data while the actions it performs as the methods. 
 Examples of this type of language are *C#*, *Cobol*, *Java*, *Kotlin* and *Python*.  
 
+<br>
+
 #### Scripting Programming Languages  
 
 Scripting Programming Languages are a little different from the others. They are not really used to create applications. But they are used to provide instructions to databases, servers, web browsers and other applications and help in the manipulation of data. Examples of this type of language are *JavaScript*, *Perl*, *PHP*, *Python* and *Ruby*.  
+
+<br>
 
 #### Logic Programming Languages  
 
@@ -104,6 +128,8 @@ Another classification of programming languages is if they are compiled or inter
 Example of Compiled Languages are: *C#*, *C++* and *C*.  
 
 Example of Interpreted Languages are: *JavaScript*, *PHP* and *Python*.  
+
+<br>
 
 #### Assembler  
 
