@@ -8,9 +8,13 @@ author: "Kaleel Boston"
 
 Hypertext Markup Language aka HTML is the language used to create content that browsers understand and use to create web pages. The Hypertext part in HTML stands for links and the ability to traverse pages and websites. While Markup stands for the tags that describe what the content are to the browser.  
 
-HTML consist of elements. These elements are the different components that tell the browser what to display and what it means. Elements consist of the previous mentioned tags(what the content means) and the content(what to show).  
+HTML consist of elements. These elements are the different components that tell the browser what to display and what it means. Elements consist of the previous mentioned tags(what the content means) and the content(what to show).
 
-Click to jump to:  
+<br>
+
+### Components of HTML  
+
+<br>
 
 * [HTML Comment](#html-comment)
 * [Element Structure](#element-structure)
@@ -25,7 +29,7 @@ Click to jump to:
 
 ### HTML Comment  
 
-Comments in HTML are `<!-- -->`. Comments allow whatever code or text in between them to be ignored from the browser. For example, `<!-- Hey there -->` hides Hey there from the browser.  
+Comments in HTML are `<!-- -->`. Comments allow whatever code or text in between them to be hidden from the browser. For example, `<!-- Hey there -->` hides Hey there from the browser.  
 
 Using comments is a good way to leave notes or explain what some code does. Also, it is a good way to hide code for various reasons such as it is faulty, not yet ready to implement or you may want to use again later.  
 
@@ -267,7 +271,7 @@ There are multiple types of tags:
         <td class="center-table-element"><code>&lt;link&gt;</code></td>
         <td>
             <li> cross-origin (anonymous | use-credentials) - specifies how the element handles cross-origin requests.
-            <li> href (url) - thelocation of the linked document.
+            <li> href (url) - the location of the linked document.
             <li> hreflang (language) - language of the text in the linked source.
             <li> media (all | aspect-ratio | color | color-index | grid | height | monochrome | orientation | print | resolution | scan | screen | speech | width) - all the devices the media can be viewed on.
             <li> referrerpolicy (no-referrer | no-referrer-when-downgrade | origin | origin-when-cross-origin | unsafe-url) - the referrer to use when fetching the resource.
@@ -311,28 +315,100 @@ There are multiple types of tags:
 
 ### Body Structure  
 
-#### Text & Text Formatting  
+The Body of an HTML document contains the majority of the content a user sees. Such as:  
 
-|Tag (Global & Event Attributes)|Description|
-|:-----------------------------:|-----------|
-|`<h1>...</h1>`<br>`.`<br>`.`<br>`.`<br>`<h6>...</h6>`|Header|
-|`<p>...</p>`|Paragraph|
-|`<b>...</b>`|Bolds content.|
-|`<strong>...</strong>`|Signifies important content and bolds it.|
-|`<i>...</i>`|Italicizes content.|
-|`<em>...</em>`|Emphasizes and italicized content.|
-|`<mark>...</mark>`|Highlights content.|
-|`<small>...</small>`|Makes content smaller compared to other content in the paragraph, span or container.|
-|`<del>...</del>`|Strikes a line through content.|
-|`<ins>...</ins>`|Underlines content.|
-|`<sub>...</sub>`|Formats content into a subscript.|
-|`<sup>...</sup>`|Formats content into a superscript.|
-|`<blockquote cite="source">...</blockquote>`|Signifies that content is a paragraph length quote or extracted from an external source.|
-|`<abbr title="unabbreviated ofr of the word">...</abbr>`|Acronym|
-|`<br>`|Break line|
-|`<hr>`|Horizontal rule|
-|`<details>...</details>`|Content that can be toggled to be shown or hidden by default (no scripting).|
-|`<summary>...</summary>`|Heading of `<details>` element.|
+* [Bullet & Numbered Lists](#bulleted--numbered-lists)
+* [Forms](#forms)
+* [Links & Media](#links--media)
+* [Tables](#tables)
+* [Text & Text Formatting](#text--text-formatting)
+
+#### Bulleted & Numbered Lists  
+
+<table class="phone-table">
+    <tr>
+        <th>Tag (Global & Event Attributes)</th>
+        <th>Attribute(s)</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;ul&gt;...&lt;/ul&gt;</code></td>
+        <td class="center-table-element">Null</td>
+        <td>Signifies the start and end of an unordered(bulleted) list.</td>
+    </tr>
+        <td class="center-table-element"><code>&lt;ol&gt;...&lt;/ol&gt;</code></td>
+        <td class="center-table-element">reversed | start | type</td>
+        <td>Signifies the start and end of an ordered(numbered) list.</td>
+    </tr>
+        <td class="center-table-element"><code>&lt;li&gt;</code></td>
+        <td class="center-table-element">value</td>
+        <td>List item. The tag can have an ending (&lt;/li&gt;), but it doesn't need to be specified.</td>
+    </tr>
+</table>
+
+<table class="phone-table">
+    <tr>
+        <th>Attribute</th>
+        <th>Value(s)</th>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            reversed<br>
+            Reverses the order of the list.
+        </td>
+        <td class="center-table-element">reversed</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            start<br>
+            The number where the list starts from.
+        </td>
+        <td class="center-table-element">number</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            type<br>
+            The type of numbering system the list uses.
+        </td>
+        <td class="center-table-element">1 | A | a | I | i</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            value<br>
+            The number where the ordered list starts from.
+        </td>
+        <td class="center-table-element">number</td>
+    </tr>
+</table>
+
+<table class="computer-table">
+    <tr>
+        <th>Tag (Global & Event Attributes)</th>
+        <th>Attribute(s)</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;ul&gt;...&lt;/ul&gt;</code></td>
+        <td class="center-table-element">Null</td>
+        <td>Signifies the start and end of an unordered(bulleted) list.</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;ol&gt;...&lt;/ol&gt;</code></td>
+        <td>
+            <li> reversed (reversed) - reversed the order of the list.
+            <li> start (number) - the number where the list starts from.
+            <li> type (1 | A | a | I | i) - the type of numbering system the list uses.
+        </td>
+        <td>Signifies the start and end of an ordered(numbered) list.</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;li&gt;</code></td>
+        <td>
+            <li> value (number) - the number where the ordered list start from.
+        </td>
+        <td>List item. The tag can have an ending (&lt;/li&gt;), but it doesn't need to be specified.</td>
+    </tr>
+</table>
 
 <br>
 
@@ -814,217 +890,6 @@ There are multiple types of tags:
 
 <br>
 
-#### Tables  
-
-<table class="phone-table">
-    <tr>
-        <th>Tag (Global & Event Attributes)</th>
-        <th>Attribute(s)</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;table&gt;...&lt;/table&gt;</td>
-        <td class="center-table-element">Null</td>
-        <td>Signifies the start and end of a table.</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;caption&gt;...&lt;/caption&gt;</td>
-        <td class="center-table-element">Null</td>
-        <td>Table Title</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;tr&gt;...&lt;/tr&gt;</td>
-        <td class="center-table-element">Null</td>
-        <td>Table Row</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;th&gt;...&lt;/th&gt;</td>
-        <td class="center-table-element">abbr | colspan | headers | rowspan | scope</td>
-        <td>Table Header</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;td&gt;...&lt;/td&gt;</td>
-        <td class="center-table-element">colspan | headers | rowspan</td>
-        <td>Table Cell</td>
-    </tr>
-</table>
-
-<table class="phone-table">
-    <tr>
-        <th>Attribute</th>
-        <th>Value(s)</th>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            abbr<br>
-            Abbreviation of the table header.
-        </td>
-        <td class="center-table-element">text</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            colspan<br>
-            Number of columns a cell/header occupies.
-        </td>
-        <td class="center-table-element">number</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            headers<br>
-            One or more headers this element is related to.
-        </td>
-        <td class="center-table-element">header id</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            rowspan<br>
-            Number of rows a cell/header occupies.
-        </td>
-        <td class="center-table-element">number</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            scope<br>
-            Whether a header is a header for a column or a group of columns, or for a row or a group of rows.
-        </td>
-        <td class="center-table-element">col | colgroup | row | rowgroup</td>
-    </tr>
-</table>
-
-<table class="computer-table">
-    <tr>
-        <th>Tag (Global & Event Attributes)</th>
-        <th>Attribute(s)</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;table&gt;...&lt;/table&gt;</code></td>
-        <td class="center-table-element">Null</td>
-        <td>Signifies the start and end of a table.</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;caption&gt;...&lt;/caption&gt;</code></td>
-        <td class="center-table-element">Null</td>
-        <td>Table Title</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
-        <<td class="center-table-element">Null</td>
-        <td>Table Row</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;th&gt;...&lt;/th&gt;</code></td>
-        <td>
-            <li> abbr (text) - abbreviation of the table header.
-            <li> colspan (number) - number of columns a header occupies.
-            <li> headers (header id) - one or more headers this element is related to.
-            <li> rowspan (number) - number of rows a header occupies.
-            <li> scope (col | colgroup | row | rowgroup) - whether a header is a header for a column or a group of columns, or for a row or a group of rows.
-        </td>
-        <td>Table Header</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;td&gt;...&lt;/td&gt;</code></td>
-        <td>
-            <li> colspan (number) - number of columns a cell occupies.
-            <li> headers (header id) - one or more headers this element is related to.
-            <li> rowspan (number) - number of rows a cell occupies.
-        </td>
-        <td>Table Cell</td>
-    </tr>
-</table>
-
-<br>
-
-#### Bulleted & Numbered Lists  
-
-<table class="phone-table">
-    <tr>
-        <th>Tag (Global & Event Attributes)</th>
-        <th>Attribute(s)</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;ul&gt;...&lt;/ul&gt;</code></td>
-        <td class="center-table-element">Null</td>
-        <td>Signifies the start and end of an unordered(bulleted) list.</td>
-    </tr>
-        <td class="center-table-element"><code>&lt;ol&gt;...&lt;/ol&gt;</code></td>
-        <td class="center-table-element">reversed | start | type</td>
-        <td>Signifies the start and end of an ordered(numbered) list.</td>
-    </tr>
-        <td class="center-table-element"><code>&lt;li&gt;</code></td>
-        <td class="center-table-element">value</td>
-        <td>List item. The tag can have an ending (&lt;/li&gt;), but it doesn't need to be specified.</td>
-    </tr>
-</table>
-
-<table class="phone-table">
-    <tr>
-        <th>Attribute</th>
-        <th>Value(s)</th>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            reversed<br>
-            Reverses the order of the list.
-        </td>
-        <td class="center-table-element">reversed</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            start<br>
-            The number where the list starts from.
-        </td>
-        <td class="center-table-element">number</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            type<br>
-            The type of numbering system the list uses.
-        </td>
-        <td class="center-table-element">1 | A | a | I | i</td>
-    </tr>
-    <tr>
-        <td class="center-table-element">
-            value<br>
-            The number where the ordered list starts from.
-        </td>
-        <td class="center-table-element">number</td>
-    </tr>
-</table>
-
-<table class="computer-table">
-    <tr>
-        <th>Tag (Global & Event Attributes)</th>
-        <th>Attribute(s)</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;ul&gt;...&lt;/ul&gt;</code></td>
-        <td class="center-table-element">Null</td>
-        <td>Signifies the start and end of an unordered(bulleted) list.</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;ol&gt;...&lt;/ol&gt;</code></td>
-        <td>
-            <li> reversed (reversed) - reversed the order of the list.
-            <li> start (number) - the number where the list starts from.
-            <li> type (1 | A | a | I | i) - the type of numbering system the list uses.
-        </td>
-        <td>Signifies the start and end of an ordered(numbered) list.</td>
-    </tr>
-    <tr>
-        <td class="center-table-element"><code>&lt;li&gt;</code></td>
-        <td>
-            <li> value (number) - the number where the ordered list start from.
-        </td>
-        <td>List item. The tag can have an ending (&lt;/li&gt;), but it doesn't need to be specified.</td>
-    </tr>
-</table>
-
-<br>
-
 #### Links & Media  
 
 <table class=phone-table>
@@ -1383,6 +1248,153 @@ There are multiple types of tags:
 
 <br>
 
+#### Tables  
+
+<table class="phone-table">
+    <tr>
+        <th>Tag (Global & Event Attributes)</th>
+        <th>Attribute(s)</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;table&gt;...&lt;/table&gt;</td>
+        <td class="center-table-element">Null</td>
+        <td>Signifies the start and end of a table.</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;caption&gt;...&lt;/caption&gt;</td>
+        <td class="center-table-element">Null</td>
+        <td>Table Title</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;tr&gt;...&lt;/tr&gt;</td>
+        <td class="center-table-element">Null</td>
+        <td>Table Row</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;th&gt;...&lt;/th&gt;</td>
+        <td class="center-table-element">abbr | colspan | headers | rowspan | scope</td>
+        <td>Table Header</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;td&gt;...&lt;/td&gt;</td>
+        <td class="center-table-element">colspan | headers | rowspan</td>
+        <td>Table Cell</td>
+    </tr>
+</table>
+
+<table class="phone-table">
+    <tr>
+        <th>Attribute</th>
+        <th>Value(s)</th>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            abbr<br>
+            Abbreviation of the table header.
+        </td>
+        <td class="center-table-element">text</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            colspan<br>
+            Number of columns a cell/header occupies.
+        </td>
+        <td class="center-table-element">number</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            headers<br>
+            One or more headers this element is related to.
+        </td>
+        <td class="center-table-element">header id</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            rowspan<br>
+            Number of rows a cell/header occupies.
+        </td>
+        <td class="center-table-element">number</td>
+    </tr>
+    <tr>
+        <td class="center-table-element">
+            scope<br>
+            Whether a header is a header for a column or a group of columns, or for a row or a group of rows.
+        </td>
+        <td class="center-table-element">col | colgroup | row | rowgroup</td>
+    </tr>
+</table>
+
+<table class="computer-table">
+    <tr>
+        <th>Tag (Global & Event Attributes)</th>
+        <th>Attribute(s)</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+        <td class="center-table-element">Null</td>
+        <td>Signifies the start and end of a table.</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;caption&gt;...&lt;/caption&gt;</code></td>
+        <td class="center-table-element">Null</td>
+        <td>Table Title</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
+        <<td class="center-table-element">Null</td>
+        <td>Table Row</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;th&gt;...&lt;/th&gt;</code></td>
+        <td>
+            <li> abbr (text) - abbreviation of the table header.
+            <li> colspan (number) - number of columns a header occupies.
+            <li> headers (header id) - one or more headers this element is related to.
+            <li> rowspan (number) - number of rows a header occupies.
+            <li> scope (col | colgroup | row | rowgroup) - whether a header is a header for a column or a group of columns, or for a row or a group of rows.
+        </td>
+        <td>Table Header</td>
+    </tr>
+    <tr>
+        <td class="center-table-element"><code>&lt;td&gt;...&lt;/td&gt;</code></td>
+        <td>
+            <li> colspan (number) - number of columns a cell occupies.
+            <li> headers (header id) - one or more headers this element is related to.
+            <li> rowspan (number) - number of rows a cell occupies.
+        </td>
+        <td>Table Cell</td>
+    </tr>
+</table>
+
+<br>
+
+#### Text & Text Formatting  
+
+|Tag (Global & Event Attributes)|Description|
+|:-----------------------------:|-----------|
+|`<h1>...</h1>`<br>`.`<br>`.`<br>`.`<br>`<h6>...</h6>`|Header|
+|`<p>...</p>`|Paragraph|
+|`<b>...</b>`|Bolds content.|
+|`<strong>...</strong>`|Signifies important content and bolds it.|
+|`<i>...</i>`|Italicizes content.|
+|`<em>...</em>`|Emphasizes and italicized content.|
+|`<mark>...</mark>`|Highlights content.|
+|`<small>...</small>`|Makes content smaller compared to other content in the paragraph, span or container.|
+|`<del>...</del>`|Strikes a line through content.|
+|`<ins>...</ins>`|Underlines content.|
+|`<sub>...</sub>`|Formats content into a subscript.|
+|`<sup>...</sup>`|Formats content into a superscript.|
+|`<blockquote cite="source">...</blockquote>`|Signifies that content is a paragraph length quote or extracted from an external source.|
+|`<abbr title="unabbreviated ofr of the word">...</abbr>`|Acronym|
+|`<br>`|Break line|
+|`<hr>`|Horizontal rule|
+|`<details>...</details>`|Content that can be toggled to be shown or hidden by default (no scripting).|
+|`<summary>...</summary>`|Heading of `<details>` element.|
+
+<br>
+
 ### Global Attributes  
 
 Global Attributes are attributes that are shared by every element.  
@@ -1410,27 +1422,39 @@ Global Attributes are attributes that are shared by every element.
 
 Event Attributes are attributes that run external or in document scripts and are shared by every element.  
 
-#### Window Events  
+They can be categorized as such:  
 
-Events triggered for the window object(applies to the body element).  
+* [Clipboard Events](#clipboard-events)
+* [Drag Events](#drag-events)
+* [Form Events](#form-events)
+* [Keyboard Events](#keyboard-events)
+* [Media Events](#media-events)
+* [Misc Events](#misc-events)
+* [Mouse Events](#mouse-events)
+* [Window Events](#window-events)
+
+#### Clipboard Events  
 
 |Attribute|Description (Script To Be Ran)|
 |:-------:|-----------|
-|onafterprint|After the document is printed.|
-|onbeforeprint|Before the document is printed.|
-|onbeforeunload|Before the document is unloaded.|
-|onerror|When an error occurs.|
-|onhashchange|When there have been changes to the anchor part of an URL.|
-|onload|When the webpage is loaded.|
-|onmessage|When a message is triggered.|
-|onoffline|When the browser starts to work offline.|
-|ononline|When the browser starts to work online.|
-|onpagehide|When the user navigates away for the webpage.|
-|onpageshow|When the user navigates to the webpage.|
-|onpopstate|When the window's history change.|
-|onresize|When the window's size is changed or minimized.|
-|onstorage|When the web storage area is updated.|
-|onunload|When the webpage is unloaded or the browser is closed.|  
+|oncopy|When the content of the element is copied.|
+|oncut|When the content of the element is cut.|
+|onpaste|When content has been pasted into the element.|  
+
+<br>
+
+#### Drag Events  
+
+|Attribute|Description (Script To Be Ran)|
+|:-------:|-----------|
+|ondrag|When the element is being dragged.|
+|ondragend|When the element isn't being dragged.|
+|ondragenter|When the element is dragged to a valid drop point.|
+|ondragleave|When the element is dragged out of a valid drop point.|
+|ondragover|When the element is dragged over a valid drop point.|
+|ondragstart|At the start of the element being dragged.|
+|ondrop|When the element is dropped.|
+|onscroll|When the scrollbar is moved up or down within the element.|  
 
 <br>
 
@@ -1461,44 +1485,6 @@ Events triggered by actions inside a HTML form (applies to almost all HTML eleme
 |onkeyup|When a key is released.|  
 
 <br>
-
-#### Mouse Events  
-
-|Attribute|Description (Script To Be Ran)|
-|:-------:|-----------|
-|onclick|When the mouse is clicked on the element.|
-|ondbclick|When the mouse is double clicked on the element.|
-|onmousedown|When the mouse button is pressed while over the element.|
-|onmousemove|When the mouse is being moved over the element.|
-|onmouseout|When the mouse moves from being over the element.|
-|onmouseover|When the mouse is over the element.|
-|onmouseup|When the mouse button is release while over the element.|
-|onwheel|When the mouse wheel moves up or down while over the element.|  
-
-<br>
-
-#### Drag Events  
-
-|Attribute|Description (Script To Be Ran)|
-|:-------:|-----------|
-|ondrag|When the element is being dragged.|
-|ondragend|When the element isn't being dragged.|
-|ondragenter|When the element is dragged to a valid drop point.|
-|ondragleave|When the element is dragged out of a valid drop point.|
-|ondragover|When the element is dragged over a valid drop point.|
-|ondragstart|At the start of the element being dragged.|
-|ondrop|When the element is dropped.|
-|onscroll|When the scrollbar is moved up or down within the element.|  
-
-<br>
-
-#### Clipboard Events  
-
-|Attribute|Description (Script To Be Ran)|
-|:-------:|-----------|
-|oncopy|When the content of the element is copied.|
-|oncut|When the content of the element is cut.|
-|onpaste|When content has been pasted into the element.|  
 
 #### Media Events  
 
@@ -1537,3 +1523,42 @@ Events triggered by media like videos, images and audio (applies to all HTML ele
 |Attribute|Description (Script To Be Ran)|
 |:-------:|-----------|
 |ontoggle|When the details element is opened or closed.|
+
+<br>
+
+#### Mouse Events  
+
+|Attribute|Description (Script To Be Ran)|
+|:-------:|-----------|
+|onclick|When the mouse is clicked on the element.|
+|ondbclick|When the mouse is double clicked on the element.|
+|onmousedown|When the mouse button is pressed while over the element.|
+|onmousemove|When the mouse is being moved over the element.|
+|onmouseout|When the mouse moves from being over the element.|
+|onmouseover|When the mouse is over the element.|
+|onmouseup|When the mouse button is release while over the element.|
+|onwheel|When the mouse wheel moves up or down while over the element.|  
+
+<br>
+
+#### Window Events  
+
+Events triggered for the window object(applies to the body element).  
+
+|Attribute|Description (Script To Be Ran)|
+|:-------:|-----------|
+|onafterprint|After the document is printed.|
+|onbeforeprint|Before the document is printed.|
+|onbeforeunload|Before the document is unloaded.|
+|onerror|When an error occurs.|
+|onhashchange|When there have been changes to the anchor part of an URL.|
+|onload|When the webpage is loaded.|
+|onmessage|When a message is triggered.|
+|onoffline|When the browser starts to work offline.|
+|ononline|When the browser starts to work online.|
+|onpagehide|When the user navigates away for the webpage.|
+|onpageshow|When the user navigates to the webpage.|
+|onpopstate|When the window's history change.|
+|onresize|When the window's size is changed or minimized.|
+|onstorage|When the web storage area is updated.|
+|onunload|When the webpage is unloaded or the browser is closed.|  
