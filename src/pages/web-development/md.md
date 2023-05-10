@@ -6,4 +6,3 @@ author: "Kaleel Boston"
 ---
 
 ## Markdown - MD
-
