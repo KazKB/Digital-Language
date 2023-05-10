@@ -8,7 +8,9 @@ author: "Kaleel Boston"
 
 Are you interested in learning how to make programs and websites? Well here at <abbr title="Digital Language">DigiLang</abbr> a basic understanding of how to do so is provided. The information provided will be just enough to get your foot into the door. How so? A wide array of topics such as programming languages and javascript frameworks will be covered. You don't worry if you don't understand those terms as you will soon have an idea.  
 
-Click To Jump To:
+### Aspects of Programming  
+
+<br>
 
 * [Programming Languages](#programming-languages)
 * [Types of Languages](#types-0f-languages)

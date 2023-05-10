@@ -13,8 +13,6 @@ Cascading Style Sheet aka CSS is a rule-based language. CSS is responsible for e
 * Internal - as content for the `style element` (`<style>css</style>`).
 * External - as an external document that is linked to the HTML document through the `link element` (`<link href="css document"rel="stylesheet" type="text/css">`).  
 
-<br>
-
 ### Components of CSS  
 
 <br>
@@ -23,7 +21,7 @@ Cascading Style Sheet aka CSS is a rule-based language. CSS is responsible for e
 * [CSS Structure](#css-structure)
 * [Properties](#properties)
 
-<br>
+<hr>
 
 ### CSS Comments  
 
@@ -31,7 +29,7 @@ Comments in CSS are `* *`. Comments allow whatever code or text in between them 
 
 Using comments is a good way to leave notes or explain what some code does. Also, it is a good way to hide code for various reasons such as it is faulty, not yet ready to implement or you may want to use again later.  
 
-<br>
+<hr>
 
 ### CSS Structure  
 
@@ -66,7 +64,7 @@ For inline it is formatted as:
     <p>Hello World!</p>
 </body>
 ```  
-<br>
+<hr>
 
 ### Properties  
 
@@ -80,6 +78,8 @@ Properties are the aspects of elements that the values edits. To make things eas
 * [Sizing](#sizing)
 * [Spacing](#spacing)
 * [Text Formatting](#text-formatting)
+
+<br>
 
 #### Animation  
 

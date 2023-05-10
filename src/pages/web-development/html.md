@@ -10,8 +10,6 @@ Hypertext Markup Language aka HTML is the language used to create content that b
 
 HTML consist of elements. These elements are the different components that tell the browser what to display and what it means. Elements consist of the previous mentioned tags(what the content means) and the content(what to show).
 
-<br>
-
 ### Components of HTML  
 
 <br>
@@ -25,7 +23,7 @@ HTML consist of elements. These elements are the different components that tell 
 * [Global Attributes](#global-attributes)
 * [Event Attributes](#event-attributes)
 
-<br>
+<hr>
 
 ### HTML Comment  
 
@@ -33,13 +31,13 @@ Comments in HTML are `<!-- -->`. Comments allow whatever code or text in between
 
 Using comments is a good way to leave notes or explain what some code does. Also, it is a good way to hide code for various reasons such as it is faulty, not yet ready to implement or you may want to use again later.  
 
-<br>
+<hr>
 
 ### Element Structure  
 
 An element is structured as `<tag>content</tag>` or `<tag>`. Usually, if there is a need for content, typically text, there is an opening and closing tag. Otherwise it is just the `<` and `>`.  
 
-<br>
+<hr>
 
 ### Tag Structure  
 
@@ -51,7 +49,7 @@ There are multiple types of tags:
 * Replaced - have only opening tag, sometimes have a closing tag and is used for non text content. Example, `<img>`.
 * Void - has no content, but performs other actions. Example, `<br>`.  
 
-<br>
+<hr>
 
 ### HTML Document Structure  
 
@@ -70,7 +68,7 @@ There are multiple types of tags:
 |`<section>...</section>`|Contains related content.|
 |`<aside>...</aside>`|Contains barely related content and ads.|  
 
-<br>
+<hr>
 
 ### Head Structure  
 
@@ -311,7 +309,7 @@ There are multiple types of tags:
     </tr>
 </table>
 
-<br>
+<hr>
 
 ### Body Structure  
 
@@ -1393,7 +1391,7 @@ The Body of an HTML document contains the majority of the content a user sees. S
 |`<details>...</details>`|Content that can be toggled to be shown or hidden by default (no scripting).|
 |`<summary>...</summary>`|Heading of `<details>` element.|
 
-<br>
+<hr>
 
 ### Global Attributes  
 
@@ -1416,7 +1414,7 @@ Global Attributes are attributes that are shared by every element.
 |title<br> Extra information of the element's content in the form a tooltip.|text|
 |translate<br> Whether the element's content should be translated or not.|yes &verbar; no|
 
-<br>
+<hr>
 
 ### Event Attributes  
 
@@ -1432,6 +1430,8 @@ They can be categorized as such:
 * [Misc Events](#misc-events)
 * [Mouse Events](#mouse-events)
 * [Window Events](#window-events)
+
+<br>
 
 #### Clipboard Events  
 
