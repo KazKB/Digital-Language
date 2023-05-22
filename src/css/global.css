@@ -8,7 +8,8 @@
 :root {
     --dark-grey: #101010;
     --grey: #c0c0c0;
-    --nav-link-size: 1.5rem;
+    --margin-padding: 0.5rem;
+    --thin: 0.1rem;
 }
 
 /* Global */
@@ -16,9 +17,9 @@ body {
     font-family: "Fixedsys Excelsior 3.01 Regular";
     background-color: var(--dark-grey);
     color: var(--grey);
-    padding: 0 0.5rem;
-    border-left: solid var(--grey) 0.1rem;
-    border-right: solid var(--grey) 0.1rem;
+    padding: 0 var(--margin-padding);
+    border-left: solid var(--grey) var(--thin);
+    border-right: solid var(--grey) var(--thin);
 }
 a {
     text-decoration: none;
@@ -28,18 +29,18 @@ a:hover {
     color: white;
 }
 li, ul, ol {
-    margin-left: 0.5rem;
+    margin-left: var(--margin-padding);
     padding: 0;
     list-style-type: square;
 }
 li {
-    margin-top: 0.5rem;
+    margin-top: var(--margin-padding);
 }
 ul, ol {
     margin-top: -0.5rem;
 }
 h2, h3, h4 {
-    margin-top: 0.5rem;
+    margin-top: var(--margin-padding);
     margin-bottom: 0;
 }
 h1 {
@@ -59,7 +60,7 @@ table, th, td {
 }
 table {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: var(--margin-padding);
     margin-bottom: 1rem;
 }
 th, td {

@@ -5,41 +5,45 @@ description: "Basic information about Cascading Style Sheets."
 author: "Kaleel Boston"
 ---
 
-## Cascading Style Sheets - CSS  
+## Cascading Stylesheets - CSS  
 
-Cascading Style Sheet aka CSS is a rule-based language. CSS is responsible for editing the look and feel of elements in an HTML document. It can be added to an HTML document via three ways:  
+Cascading Stylesheet aka CSS is a rule-based language. CSS is responsible for editing the look and feel of elements in an HTML document. It can be added to an HTML document via three ways:  
 
-* Inline - as an global attribute of all elements (`style = "css"`).
-* Internal - as content for the `style element` (`<style>css</style>`).
-* External - as an external document that is linked to the HTML document through the `link element` (`<link href="css document"rel="stylesheet" type="text/css">`).  
+- Inline - as an global attribute of all elements (`style = "css"`).
+- Internal - as content for the `style element` (`<style>css</style>`).
+- External - as an external document that is linked to the HTML document through the `link element` (`<link href="css document"rel="stylesheet" type="text/css">`).  
 
 ### Components of CSS  
 
 <br>
 
-* [CSS Comments](#css-comments)
-* [CSS Structure](#css-structure)
-* [Properties](#properties)
+- [Comment](#comment "Comment")
+- [Structure](#structure "Structure")
+- [Selectors](#selectors "Selectors")
+- [Properties](#properties "Properties")
+- [pseudo-Classes](#pseudo-classes "Pseudo-Classes")
+- [pseudo-Elements](#pseudo-elements "Pseudo-Elements")
+- [Variables](#variables "Variables")
 
-<hr>
+---
 
-### CSS Comments  
+### Comment 
 
-Comments in CSS are `* *`. Comments allow whatever code or text in between them to be hidden from the browser. For example, `*body {color: green;}*` hides the changing of text color to green from the browser.  
+Comments in CSS are `* *`. Comments allow whatever code or text in between them to be hidden from the browser. For example - `*body {color: green;}*` hides the changing of text color to green from the browser.  
 
 Using comments is a good way to leave notes or explain what some code does. Also, it is a good way to hide code for various reasons such as it is faulty, not yet ready to implement or you may want to use again later.  
 
-<hr>
+---
 
-### CSS Structure  
+### Structure  
 
 CSS consists of multiple components. They are: 
 
-* Selector - the element, or its class(es) or id the rules are applied to too.
-* Property - the what aspect of the element is being edited.
-* Value - how the property is being edited.  
+- Selector - the element, or its class(es) or id the rules are applied to too.
+- Property - the what aspect of the element is being edited.
+- Value - how the property is being edited.  
 
-For external css it is formatted as:  
+External Format:  
 
 ```css
 body {
@@ -47,7 +51,7 @@ body {
 }
 ```  
 
-For internal it is formatted as:  
+Internal Format:  
 
 ```html
 <style>
@@ -57,27 +61,42 @@ For internal it is formatted as:
 </style>
 ```  
 
-For inline it is formatted as:
+Inline Format:
 
 ```html
 <body style="color: green;">
     <p>Hello World!</p>
 </body>
 ```  
-<hr>
+---
+
+### Selectors
+
+Selectors are the element or elements that are being edited.
+
+|Selector|Description|
+|:------:|-----------|
+|*|Every element is edited.|
+|.element-class|The element(s) with that class is edited.|
+|#element-id|The element with that id is edited.|
+|element-name|Every instance of said element is edited.|
+|element-name, element-name, element-name...|Every instance of the elements named will be edited in the same way.|
+|element-name element-name...|Every instance of an element that is within another element will be edited.|
+
+---
 
 ### Properties  
 
 Properties are the aspects of elements that the values edits. To make things easier below they are categorized to make such easier: 
 
-* [Animation](#animation)
-* [Background](#background)
-* [Border](#border)
-* [Misc](#misc)
-* [Position](#positioning)
-* [Sizing](#sizing)
-* [Spacing](#spacing)
-* [Text Formatting](#text-formatting)
+- [Animation](#animation "Animation")
+- [Background](#background "Background")
+- [Border](#border "Border")
+- [Misc](#misc "Misc")
+- [Position](#positioning "Positioning")
+- [Sizing](#sizing "Sizing")
+- [Spacing](#spacing "Spacing")
+- [Text Formatting](#text-formatting "Text Formatting")
 
 <br>
 
@@ -241,3 +260,122 @@ padding-top <br> Top padding of an element.|length &verbar; percentage &verbar; 
 |text-overflow <br> How to show text that escaped the boundaries of a container.|clipped &verbar; ellipsis &verbar; string &verbar; initial &verbar; inherit|
 |text-shadow <br> Adds shadows to text.|h-shadow &nbsp; v-shadow &nbsp; blur-radius &nbsp; color &nbsp; none &verbar; initial &verbar; inherit|
 |text-transform <br> Whether to capitalize character or words.|none &verbar; capitalize &verbar; uppercase &verbar; lowercase &verbar; initial &verbar; inherit|
+
+---
+
+### Pseudo-Classes
+
+Pseudo-Classes define a special state of a selector.
+
+#### Declaration
+
+```css
+a:hover {
+    color: blue;
+    background: white;
+}
+```
+
+#### States
+
+|Pseudo-Class|Used On|
+|:----------:|----------|
+|:active|Every instance of selector with a link that was activated.|
+|:checked|Every instance of selector with checked attribute.|
+|:disabled|Every instance of selector with disabled attribute.|
+|:empty|Every instance of selector with empty attribute.|
+|:enabled|Every instance of selector with enabled attribute.|
+|:first-child|Every instance of selector as the first child.|
+|:first-of-type|Every first instance of selector as a child.|
+|:focus|Every instance of selector with focus attribute.|
+|:hover|When mouse is over selector.|
+|:in-range|Selector whose values within a specified range.|
+|:invalid|Selector whose values are invalid.|
+|:lang(language)|Selector elements with the lang attribute that has the value of “language”.|
+|:last-child|Every instance of selector as the last child.|
+|:last-of-type|Every last instance of selector as a child.|
+|:link|Selector's unvisited link.|
+|:not(selector)|Every selector except the chosen selector.|
+|:nth-last-child(n)|Every instance of the selector as n child from last child.|
+|:nth-of-type(n)|Every n<sup>th</sup>instance of selector as a child.|
+|:only-child|Every instance of selector that is the only child.|
+|:only-of-type|Every instance of selector that is the only instance of the child.|
+|:optional|Every instance of selector that has no required attribute.|
+|:out-of-range|Every instance of the selector with values out of range.|
+|:read-only|Every instance of selector with readonly attribute.|
+|:required|Every instance of selector with required attribute.|
+|:root|Root element of the document.|
+|:valid|Every instance of selector with a valid value.|
+|:visited|Every instance of selector with a link that was visited.|
+
+---
+
+### Pseudo-Elements
+
+Pseudo-Classes define a part of a selector.
+
+#### Declaration
+
+```css
+p::first-line {
+    color: blue;
+    background: white;
+}
+```
+
+#### Element Parts
+
+|Pseudo-Element|Used On|
+|:----------:|----------|
+|::after|After each instance of selector, something is inserted.|
+|::before|Before each instance of selector, something is inserted.|
+|::first-letter|First letter of every instance of selector.|
+|::first-line|First line of every instance of selector.|
+|::marker|Every marker of list items.|
+|::selection|Portion that is selected by user.|
+
+---
+
+### Variables
+
+To make the editing similar valued elements even easier, CSS has variables. They are used to replace values. This is how it makes changing the values of other elements easier. As you change the value of the variable, it changes everywhere it is used. 
+
+#### Format
+
+A CSS variable is structured similarly to regular CSS property and value. A variable contains the variable's name and the value it represents. For example:  
+
+- Declaration: `--paragraph-size: 1.1rem;` 
+- Assign: `font-size: var(paragraph-size);` 
+
+N.B - the var() function is used to call the variable.
+
+#### Declaration
+
+You can declare variables in the `:root` pseudo-class for a global (can be accessed in multiple css files) scale, or in a selector for local scale.
+
+```css
+:root {
+    --paragraph-size: 1.1rem;
+}
+
+div {
+    --blue: rgb(0,0,255);
+    border-color: var(--blue);
+    color: var(--blue);
+}
+```
+
+#### Override
+
+Variables can be overridden to change there value for a certain element or elements. This change is done on a local scale.
+
+```css
+:root {
+    --paragraph-size: 1.1rem;
+}
+
+div {
+    --paragraph-size: 1.1rem;
+    font-size: var(--paragraph-size);
+}
+```

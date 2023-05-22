@@ -14,44 +14,44 @@ HTML consist of elements. These elements are the different components that tell 
 
 <br>
 
-* [HTML Comment](#html-comment)
-* [Element Structure](#element-structure)
-* [Tag Structure](#tag-structure)
-* [HTML Document Structure](#html-document-structure)
-* [Head Structure](#head-structure)
-* [Body Structure](#body-structure)
-* [Global Attributes](#global-attributes)
-* [Event Attributes](#event-attributes)
+- [Comment](#html-comment "HTML Comment")
+- [Element Structure](#element-structure "Element Structure")
+- [Tag Structure](#tag-structure "Tag Structure")
+- [Document Structure](#html-document-structure "HTML Document Structure")
+- [Head Structure](#head-structure "Head Structure")
+- [Body Structure](#body-structure "Body Structure")
+- [Global Attributes](#global-attributes "Global Attributes")
+- [Event Attributes](#event-attributes "Event Attributes")
 
-<hr>
+---
 
-### HTML Comment  
+### Comment  
 
-Comments in HTML are `<!-- -->`. Comments allow whatever code or text in between them to be hidden from the browser. For example, `<!-- Hey there -->` hides Hey there from the browser.  
+Comments in HTML are `<!-- -->`. Comments allow whatever code or text in between them to be hidden from the browser. For example - `<!-- Hey there -->` hides Hey there from the browser.  
 
 Using comments is a good way to leave notes or explain what some code does. Also, it is a good way to hide code for various reasons such as it is faulty, not yet ready to implement or you may want to use again later.  
 
-<hr>
+---
 
 ### Element Structure  
 
 An element is structured as `<tag>content</tag>` or `<tag>`. Usually, if there is a need for content, typically text, there is an opening and closing tag. Otherwise it is just the `<` and `>`.  
 
-<hr>
+---
 
 ### Tag Structure  
 
-An element consists of the tag and content, with the content usually being text. Additionally, the tag can be broken down even further. Tags contain the name of the tag as well as attributes and their values. Attributes are only contained in the opening tag if the tag has both the opening and closing tag. For example, `<tag attribute="value">content</tag>`.  
+An element consists of the tag and content, with the content usually being text. Additionally, the tag can be broken down even further. Tags contain the name of the tag as well as attributes and their values. Attributes are only contained in the opening tag if the tag has both the opening and closing tag. For example - `<tag attribute="value">content</tag>`.  
 
 There are multiple types of tags:  
 
-* Non-replaced - have an opening and closing tag(sometimes optional) that surround text or other tags. Example, `<h1>...</h1>`.
-* Replaced - have only opening tag, sometimes have a closing tag and is used for non text content. Example, `<img>`.
-* Void - has no content, but performs other actions. Example, `<br>`.  
+- Non-replaced - have an opening and closing tag(sometimes optional) that surround text or other tags. Example, `<h1>...</h1>`.
+- Replaced - have only opening tag, sometimes have a closing tag and is used for non text content. Example, `<img>`.
+- Void - has no content, but performs other actions. Example, `<br>`.  
 
-<hr>
+---
 
-### HTML Document Structure  
+### Document Structure  
 
 |Tag(Global & Event Attributes)|Description|
 |:----------------------------:|-----------|
@@ -68,7 +68,7 @@ There are multiple types of tags:
 |`<section>...</section>`|Contains related content.|
 |`<aside>...</aside>`|Contains barely related content and ads.|  
 
-<hr>
+---
 
 ### Head Structure  
 
@@ -309,17 +309,17 @@ There are multiple types of tags:
     </tr>
 </table>
 
-<hr>
+---
 
 ### Body Structure  
 
 The Body of an HTML document contains the majority of the content a user sees. Such as:  
 
-* [Bullet & Numbered Lists](#bulleted--numbered-lists)
-* [Forms](#forms)
-* [Links & Media](#links--media)
-* [Tables](#tables)
-* [Text & Text Formatting](#text--text-formatting)
+- [Bullet & Numbered Lists](#bulleted--numbered-lists "Bullet & Numbered Lists")
+- [Forms](#forms "Forms")
+- [Links & Media](#links--media "Links & Media")
+- [Tables](#tables "Tables")
+- [Text & Text Formatting](#text--text-formatting "Text & Text Formatting")
 
 #### Bulleted & Numbered Lists  
 
@@ -1387,11 +1387,11 @@ The Body of an HTML document contains the majority of the content a user sees. S
 |`<blockquote cite="source">...</blockquote>`|Signifies that content is a paragraph length quote or extracted from an external source.|
 |`<abbr title="unabbreviated ofr of the word">...</abbr>`|Acronym|
 |`<br>`|Break line|
-|`<hr>`|Horizontal rule|
+|`---`|Horizontal rule|
 |`<details>...</details>`|Content that can be toggled to be shown or hidden by default (no scripting).|
 |`<summary>...</summary>`|Heading of `<details>` element.|
 
-<hr>
+---
 
 ### Global Attributes  
 
@@ -1414,7 +1414,7 @@ Global Attributes are attributes that are shared by every element.
 |title<br> Extra information of the element's content in the form a tooltip.|text|
 |translate<br> Whether the element's content should be translated or not.|yes &verbar; no|
 
-<hr>
+---
 
 ### Event Attributes  
 
@@ -1422,14 +1422,14 @@ Event Attributes are attributes that run external or in document scripts and are
 
 They can be categorized as such:  
 
-* [Clipboard Events](#clipboard-events)
-* [Drag Events](#drag-events)
-* [Form Events](#form-events)
-* [Keyboard Events](#keyboard-events)
-* [Media Events](#media-events)
-* [Misc Events](#misc-events)
-* [Mouse Events](#mouse-events)
-* [Window Events](#window-events)
+- [Clipboard Events](#clipboard-events "Clipboard Events")
+- [Drag Events](#drag-events "Drag Events")
+- [Form Events](#form-events "Form Events")
+- [Keyboard Events](#keyboard-events "Keyboard Events")
+- [Media Events](#media-events "Media Events")
+- [Misc Events](#misc-events "Misc Events")
+- [Mouse Events](#mouse-events "Mouse Events")
+- [Window Events](#window-events "Window Events")
 
 <br>
 
