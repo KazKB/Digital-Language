@@ -8,13 +8,13 @@ author: "Kaleel Boston"
 
 Web Development is the development of websites and web applications. But that is not all web development is focused on. The maintenance and frequent updates of the website and wep application are also key roles within web development. This is because the creation and upload of a website or web application to a web server is not everything. Routine check ups, updates of relevant information and features, and introduction of new features actually take up the most time of web development. After all technology and languages are constantly evolving so the websites and web applications have to evolve as well.  
 
-<br>
+---
 
 ### Website Vs Web Applications  
 
 The products of web development are the traditional website and the new school web application. Websites are a set of webpages built around a common theme and purpose. While web applications are applications that are accessible through a web browser. Meaning that there is no need to download anything. Though both have their differences they are uploaded to a web server which allows users to gain access to them through a web browser.  
 
-<br>
+---
 
 ### Tools &amp; Equipment  
 
@@ -26,7 +26,7 @@ To create a website or web application, one will need servers, databases, domain
 * IP Address - a location address that links the service (website for example) to a device (server for example) on a network.
 * Server - a computer whose main purpose is to store, manage and process data, devices and systems. There are many different kinds for example a web server or application server. Websites and web applications both use a web server (holds website and web application files and transfer them to a web browser). But the thing is that web applications also need an application server (holds application data).  
 
-<br>
+---
 
 ### Web Developers  
 

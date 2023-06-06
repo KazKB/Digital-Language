@@ -21,8 +21,8 @@ Cascading Stylesheet aka CSS is a rule-based language. CSS is responsible for ed
 - [Structure](#structure "Structure")
 - [Selectors](#selectors "Selectors")
 - [Properties](#properties "Properties")
-- [pseudo-Classes](#pseudo-classes "Pseudo-Classes")
-- [pseudo-Elements](#pseudo-elements "Pseudo-Elements")
+- [Pseudo-Classes](#pseudo-classes "Pseudo-Classes")
+- [Pseudo-Elements](#pseudo-elements "Pseudo-Elements")
 - [Variables](#variables "Variables")
 
 ---

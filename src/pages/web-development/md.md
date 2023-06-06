@@ -221,7 +221,7 @@ Text on its own doesn't really carry weight, thus text emphasis were created. Th
 
 Format: 
 
-- Bold - `*text*` or `_text_`
-- Italics - `**text**` or `__text__`
+- Italics - `*text*` or `_text_`
+- Bold - `**text**` or `__text__`
 - Bold & Italics - `***text***` or `___text___`
 - Strikethrough - `~~text~~`

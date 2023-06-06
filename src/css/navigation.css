@@ -11,7 +11,7 @@ nav p {
     border-width: 0.001rem;
     border-radius: 0;
     background-color: var(--grey);
-    color: var(--dark-grey);
+    color: var(--black);
 }
 
 /* Navigation */
@@ -32,18 +32,18 @@ nav a {
     border: solid var(--grey) 0.001rem;
 }
 nav a:hover {
-    color: var(--dark-grey);
+    color: var(--black);
     background-color: var(--grey);
 }
 .visible {
     display: block;
     padding: 0.7rem 0;
-    background-color: var(--dark-grey);
+    background-color: var(--black);
     color: var(--grey);
 }
 .visible:hover {
     background-color: var(--grey);
-    color: var(--dark-grey);
+    color: var(--black);
 }
 
 /* Return To Top Button */
@@ -60,7 +60,7 @@ nav a:hover {
 }
 .scroll:hover {
     background-color: rgba(100,100,100,0.9);
-    color: var(--dark-grey);
+    color: var(--black);
 }
 .hidden {
     display: none;
@@ -69,7 +69,7 @@ nav a:hover {
 /* Laptop and Tablet Screen Configuration */
 @media only screen and (min-width: 700px) { 
     /* Header */
-    /* Pop-Up Mwnu */
+    /* Pop-Up Menu */
     nav p {
         display: none;
     }
