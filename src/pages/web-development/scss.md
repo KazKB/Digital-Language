@@ -61,10 +61,8 @@ SCSS Format:
 ```scss
 nav {
     background: black;
-
     p {
         color: white;
-
         a {
             color: grey;
         }
@@ -116,7 +114,7 @@ $grey: #101010; // Global and Applies to just P
 p {
     $font-size: 12px; // Local
     color: $grey;
-    font-size: $font-size
+    font-size: $font-size;
 }
 
 $grey: #c0c0c0; // Applies to A and the rest that would follow unless if it is overridden again
@@ -192,7 +190,6 @@ body {
         width: 500px;
     }
 }
-
 ```
 
 ---
