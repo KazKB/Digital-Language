@@ -4,6 +4,7 @@ title: "Web Development - Digital Language"
 description: "Overview of the different aspects of web development, and the tools and languages used to create websites and web apps."
 author: "Kaleel Boston"
 ---
+
 ## All About Web Development
 
 Web Development is the development of websites and web applications. But that is not all web development is focused on. The maintenance and frequent updates of the website and wep application are also key roles within web development. This is because the creation and upload of a website or web application to a web server is not everything. Routine check ups, updates of relevant information and features, and introduction of new features actually take up the most time of web development. After all technology and languages are constantly evolving so the websites and web applications have to evolve as well.  
@@ -16,7 +17,7 @@ The products of web development are the traditional website and the new school w
 
 ---
 
-### Tools &amp; Equipment  
+### Tools & Equipment  
 
 To create a website or web application, one will need servers, databases, domains, certificates, knowledge of programming languages, and a text editor and/or a integrated development environment (ide). What are these? Don't worry, each will be briefly explained.  
 

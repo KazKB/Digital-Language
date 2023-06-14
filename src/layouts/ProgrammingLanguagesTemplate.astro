@@ -9,7 +9,7 @@ const {frontmatter} = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="icons/logo-icon.png" />
+		<link rel="icon" type="image/svg+xml" href="/icons/logo-icon.png" />
         <meta name="author" content={frontmatter.author}>
         <meta name="description" content={frontmatter.description}>
         <meta name="generator" content={Astro.generator} />
@@ -18,19 +18,18 @@ const {frontmatter} = Astro.props;
 	</head>
 	<body>
         <header>
-            <h1>Digital Language</h1>
+            <h1><a href="/">Digital Language</a></h1>
             <hr>
             <nav>
                 <p>
                     Menu
                 </p>
-                <a href="/" title="Introduction">Introduction</a>
-                <a href="/programming-languages/introduction" title="Programming Languages">Languages</a>
-                <a href="/web-development/introduction" title="Web Development">Web Development</a>
+                <a href="/programming-languages/introduction" title="Introduction">Introduction</a>
+                <a href="/programming-languages/java" title="Java">Java</a>
             </nav>
             <hr>
         </header>
-	
+		
         <main>
             <slot/>
         </main>
@@ -46,4 +45,5 @@ const {frontmatter} = Astro.props;
 	</body>
 
     <script src="../javascript/navigation.js"></script>
+    <script src="../javascript/web-development.js"></script>
 </html>

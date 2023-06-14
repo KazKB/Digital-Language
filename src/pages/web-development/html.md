@@ -4,9 +4,10 @@ title: "HTML - Digital Language"
 description: "Basic information about Hyper Text Markup Language."
 author: "Kaleel Boston"
 ---
+
 ## Hypertext Markup Language - HTML  
 
-Hypertext Markup Language aka HTML is the language used to create content that browsers understand and use to create web pages. The Hypertext part in HTML stands for links and the ability to traverse pages and websites. While Markup stands for the tags that describe what the content are to the browser.  
+Hypertext Markup Language aka HTML is the markup language used to create content that browsers understand and use to create web pages. The Hypertext part in HTML stands for links and the ability to traverse pages and websites. While Markup stands for the tags that describe what the content are to the browser.  
 
 HTML consist of elements. These elements are the different components that tell the browser what to display and what it means. Elements consist of the previous mentioned tags(what the content means) and the content(what to show).
 
