@@ -8,6 +8,7 @@
 :root {
     --black: #010101;
     --grey: #c0c0c0;
+    --grey-2: #222222;
     --white: #fff;
     --margin-padding: 0.5rem;
     --thin: 0.1rem;
@@ -16,18 +17,20 @@
 /* Global */
 body {
     font-family: "Fixedsys Excelsior 3.01 Regular";
-    background-color: var(--black);
+    background-color: var(--grey-2);
     color: var(--white);
-    padding: 0 var(--margin-padding);
+    padding: 0.01rem var(--margin-padding);
     border-left: solid var(--white) var(--thin);
     border-right: solid var(--white) var(--thin);
+    margin: 0; /* Astro Adds Margin To Body */
 }
 a {
     text-decoration: none;
     color: var(--white);
+    transition: 1s;
 }
 a:hover {
-    color: #c0c0c0;
+    color: var(--grey);
 }
 li, ul, ol {
     margin-left: var(--margin-padding);
@@ -43,6 +46,7 @@ ul, ol {
 h2, h3, h4 {
     margin-top: var(--margin-padding);
     margin-bottom: 0;
+    letter-spacing: 0.1rem;
 }
 h1 {
     font-size: 2rem;
@@ -83,8 +87,13 @@ header {
 header h1 {
     text-align: center;
 }
+header h1 a, header h1 {
+    color: var(--black);
+    -webkit-text-stroke: 0.1px var(--white);
+}
 header h1 a:hover {
-    color: white;
+    color: var(--white);
+    -webkit-text-stroke: 0.1px var(--black);
 }
 
 /* Footer */
@@ -94,9 +103,12 @@ footer {
 }
 footer a {
     font-size: 2rem;
+    color: var(--black);
+    -webkit-text-stroke: 0.5px var(--white);
 }
 footer a:hover {
-    color: white;
+    color: var(--white);
+    -webkit-text-stroke: 0.5px var(--black);
 }
 #credit {
     font-size: 1rem;

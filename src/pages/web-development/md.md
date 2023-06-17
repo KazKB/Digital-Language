@@ -101,6 +101,14 @@ Secondary Heading
 
 Links contain two parts the mask (what is shown in place of the link) and the link itself (whether it is absolute, relative, etc...). And link everything in markdown there is multiple ways to go about linking.
 
+Images (Similar Format To Links):
+
+- `![Alt Text](source)`
+
+Image Link:
+
+- `[![Alt Text](source)](https://absolute-link.com)`
+
 Absolute Link:
 
 - `[Mask](https://absolute-link.com)`
