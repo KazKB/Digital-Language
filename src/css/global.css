@@ -87,13 +87,8 @@ header {
 header h1 {
     text-align: center;
 }
-header h1 a, header h1 {
-    color: var(--black);
-    -webkit-text-stroke: 0.1px var(--white);
-}
 header h1 a:hover {
-    color: var(--white);
-    -webkit-text-stroke: 0.1px var(--black);
+    color: var(--black);
 }
 
 /* Footer */
@@ -103,12 +98,9 @@ footer {
 }
 footer a {
     font-size: 2rem;
-    color: var(--black);
-    -webkit-text-stroke: 0.5px var(--white);
 }
 footer a:hover {
-    color: var(--white);
-    -webkit-text-stroke: 0.5px var(--black);
+    color: var(--black);
 }
 #credit {
     font-size: 1rem;
